@@ -14,6 +14,6 @@ class IndexController extends ControllerBase {
         $gc = new ConfigComponent();
         var_dump($gc->getValue("log-file-path"));
         echo "lol";
-        return false;
+        $this->view->disable();
     }
 }
