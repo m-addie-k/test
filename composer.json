@@ -1,6 +1,6 @@
 
 {
-    "name": "Modules/Test",
+    "name": "modules/test",
     "description": "Mixed test module",
     "type": "library",
     "require": {
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Test\\": "src/",
+            "Modules\\Test\\": "src/",
             "": "src/"
         }
     }
