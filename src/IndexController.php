@@ -1,19 +1,28 @@
 <?php
 // use Phalcon\Http\Response;
-// use Base\Components\UserComponent;
-// use Base\Components\ConfigComponent;
+// use Base\Components\User;
+// use Base\Components\GlobalConfig;
+// use Base\Components\ModuleManager;
 
-class IndexController extends ControllerBase {
+class IndexController extends ControllerView {
     public function indexAction(){
-
-//         $users = new UserComponent();
+        // $base = new ModuleManager();
+        // var_dump($base->getConfigPath());
         // throw new \Exception("Error Processing Request", 1);
-//         $users->save();
+        // $users = new User();
+        // $users->save();
+        // $user = $users->findFirst();
+        // $user->addStatus("test");
+        // var_dump($user->getStatuses());
 //         var_dump($users->getMessages());
 
-//         $gc = new ConfigComponent();
+//         $gc = new GlobalConfig();
 //         var_dump($gc->getValue("log-file-path"));
-        echo "lol";
-        $this->view->disable();
+        // echo "lol";
+        // $this->view->disable();
+        $this->view->page_title = "ololo";
+        $this->view->body_content = '
+            <script type="text/javascript" src="/frontend/js?group=modules&module=test&name=index"></script>
+        ';
     }
 }
