@@ -1,6 +1,3 @@
-"webpack": {
-    "from": "frontend/index.js",
-    "to": "frontend/js/index.js",
-    "module": "modules/test",
-    "name": "index"
+{
+    
 }
